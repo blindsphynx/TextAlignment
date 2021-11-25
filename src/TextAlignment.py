@@ -9,9 +9,9 @@ class Alignment(Enum):
 
 def alignText(text, alignment=Alignment.LEFT) -> str:
     if Alignment.LEFT:
-        while text[0] == " ":
-            text = text[1:]
+        while text[0] == ' ':
+            text = text[1:] + ' '
     return text
 
 
-# print(alignText('     akj lk pwmm'))
+# print(alignText("     akj lk pwmm"))
